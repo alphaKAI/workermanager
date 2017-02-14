@@ -1,0 +1,13 @@
+{
+	"name": "workermanager",
+	"authors": [
+		"Akihiro Shoji"
+	],
+	"dependencies": {
+		"libasync": "~>0.8.3"
+	},
+  "target": "sourceLibrary",
+	"description": "Multi-thread based asynchronized worker manager with libasync",
+	"copyright": "Copyright (C) 2017, Akihiro Shoji",
+	"license": "MIT"
+}
