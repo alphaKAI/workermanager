@@ -1,6 +1,5 @@
 import workermanager;
-import std.stdio,
-       std.datetime;
+import std.stdio;
 
 void main() {
   writeln("<main> start!");
@@ -11,19 +10,19 @@ void main() {
       writeln("-<worker abc> ABC!");
       writeln("-<worker abc> worker.name : ", worker.name);
 
-      foreach (idx; 0..10) { // complexe processes
+      foreach (idx; 0..10) { // complex processes
         writeln("-<worker abc> loop, idx - ", idx);
       }
     }),
     Worker("def", {
       writeln("--<worker def> DEF!");
-      foreach (idx; 0..10) { // complexe processes
+      foreach (idx; 0..10) { // complex processes
         writeln("--<worker def> loop, idx - ", idx);
       }
     }),
     Worker("ghi", {
       writeln("---<worker ghi> GHI!");
-      foreach (idx; 0..10) { // complexe processes
+      foreach (idx; 0..10) { // complex processes
         writeln("---<worker ghi> loop, idx - ", idx);
       }
     })];
