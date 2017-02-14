@@ -1,0 +1,12 @@
+{
+	"name": "oneshotworkers",
+	"authors": [
+		"Akihiro Shoji"
+	],
+  "dependencies": {
+    "workermanager":{"path":"../../"}
+  },
+	"description": "An example of workermanager with one-shot workers.",
+	"copyright": "Copyright (C) 2017, Akihiro Shoji",
+	"license": "MIT"
+}
