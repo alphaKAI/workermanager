@@ -1,0 +1,12 @@
+{
+	"name": "periodicworkers",
+	"authors": [
+		"Akihiro Shoji"
+	],
+  "dependencies": {
+    "workermanager":{"path":"../../"}
+  },
+	"description": "An example of workermanager with periodic workers.",
+	"copyright": "Copyright (C) 2017, Akihiro Shoji",
+	"license": "MIT"
+}
