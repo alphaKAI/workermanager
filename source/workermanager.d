@@ -117,6 +117,7 @@ class WorkerManager {
       }
     } else {
       worker.dg(worker);
+      workers[worker.name] = WorkerStatus.Suspended;
     }
   }
 
@@ -170,5 +171,15 @@ class WorkerManager {
 
   void joinAll() {
     this.tg.joinAll;
+  }
+
+  bool checkAllFinished() {
+    foreach (worker; workers.values) {
+      if (worker == WorkerStatus.Running) {
+        return false;
+      }
+    }
+
+    return true;
   }
 }
